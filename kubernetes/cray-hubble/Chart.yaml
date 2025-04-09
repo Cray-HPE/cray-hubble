@@ -1,7 +1,7 @@
 #
 # MIT License
 #
-# (C) Copyright 2024-2025 Hewlett Packard Enterprise Development LP
+# (C) Copyright 2022-2025 Hewlett Packard Enterprise Development LP
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
 # copy of this software and associated documentation files (the "Software"),
@@ -21,17 +21,18 @@
 # ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 # OTHER DEALINGS IN THE SOFTWARE.
 #
-name: Backport Command
- 
-on:
-  issue_comment:
-    types:
-      - created
- 
-jobs:
-  backport-command:
-    # On public repo, change this to "runs-on: ubuntu-latest"
-    runs-on: [self-hosted, self-hosted-small]
-    if: github.event.issue.pull_request
-    steps:
-      - uses: Cray-HPE/backport-command-action@main
+apiVersion: v2
+version: 0.0.1
+name: cray-hubble
+description: Resources to allow access to the Cilium Hubble UI
+keywords:
+  - cilium
+  - hubble
+home: https://github.com/Cray-HPE/cray-hubble
+sources:
+  - https://github.com/Cray-HPE/cray-hubble
+maintainers:
+  - name: spillerc-hpe
+appVersion: 0.0.1
+annotations:
+  artifacthub.io/license: MIT

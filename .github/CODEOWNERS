@@ -5,3 +5,5 @@
 #
 # In general, CODEOWNERS should be team in the Cray-HPE organization, not individuals.
 #
+*   @Cray-HPE/management-network
+*   @Cray-HPE/platform-engineering
